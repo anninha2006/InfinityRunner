@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InfinityRunner.MainPage">
+
+    <Grid>
+        <HorizontalStackLayout x:Name="layerfundo">
+        <Image Source="fundo.jpg"
+               Aspect="AspectFit"/>
+        </HorizontalStackLayout>
+
+        </HorizontalStackLayout x:Name="layerchao">
+       <Image Source="chao.jpg"
+              WidthRequest="400"
+              VerticalOptions="End"/>
+        <Image Source="chao.jpg"
+              WidthRequest="400"
+              VerticalOptions="End"/>
+        </HorizontalStackLayout>
+        <Image Source="cowboy.png"
+               WidthRequest="200" />
+    </Grid>    
+
+
+</ContentPage>
