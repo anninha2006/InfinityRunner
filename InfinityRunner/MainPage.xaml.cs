@@ -9,8 +9,8 @@ public partial class MainPage : ContentPage
 	const int tempoEntreFrames=25;
 	const int forcaGravidade=6;
 	const int ForcaPulo=8;
-	const int maxTempoPulando=6;
-	const int maxTempoNoAr=4;
+	const int maxTempoPulando=20;
+	const int maxTempoNoAr=200;
 	int velocidade1=0;
 	int velocidade2=0;
 	int velocidade3=0;
@@ -43,10 +43,10 @@ public partial class MainPage : ContentPage
 		inimigos.Add(new Inimigo(obstaculo4));
     }
 	
-	void OnGridTapped (object o, TappedEventArgs a)
+	void OnGridClikd(object o, TappedEventArgs a)
 	{
-		if (estaNoChao)
-			estaPulando=true;
+		if(estaNoChao)
+		   estaPulando = true;
 	}
 
 	protected override void OnAppearing()
@@ -124,7 +124,8 @@ public partial class MainPage : ContentPage
 		if(estaPulando && tempoPulando >=maxTempoPulando)
 		{
 			estaPulando=false;
-			estaNoAr=true;
+			estaNoAr=false;
+			tempoPulando = 0;
 			tempoNoAr=0;
 		}
 		else if (estaNoAr && tempoNoAr >=maxTempoNoAr)

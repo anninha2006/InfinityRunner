@@ -1,4 +1,5 @@
 namespace InfinityRunner;
+
 public class Inimigos
 {
     List<Inimigo> inimigos = new List<Inimigo>();

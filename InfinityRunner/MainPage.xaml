@@ -1,77 +1,111 @@
-﻿﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InfinityRunner.MainPage"
              xmlns:ff="clr-namespace:FFImageLoading.Maui;assembly=FFImageLoading.Maui"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#bfbcbb">
 
        <Grid>
               <Grid.GestureRecognizers>
-                     <TapGestureRecognizer Tapped="OnGridTapped"/>
+                     <TapGestureRecognizer Tapped="OnGridClikd"/>
               </Grid.GestureRecognizers>
               <HorizontalStackLayout x:Name="layerFundo1">
                      <Image Source="fundo1.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill"/>
                      <Image Source="fundo1.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill"/>
                      <Image Source="fundo1.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill"/>
               </HorizontalStackLayout>
               <HorizontalStackLayout x:Name="layerFundo2">
                      <Image Source="fundo2.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="End"
+                            VerticalOptions="Fill"/>
                      <Image Source="fundo2.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="End"
+                            VerticalOptions="Fill"/>
                      <Image Source="fundo2.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="End"
+                            VerticalOptions="Fill"/>
               </HorizontalStackLayout>
               <HorizontalStackLayout x:Name="layerFundo3">
                      <Image Source="fundo3.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill"/>
                      <Image Source="fundo3.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill"/>
                      <Image Source="fundo3.png"
-                            Aspect="AspectFill"/>
+                            Aspect="Fill"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill"/>
               </HorizontalStackLayout>
               <HorizontalStackLayout x:Name="layerAsfalto">
                      <Image Source="asfalto.png"
-                            WidthRequest="400"
-                            VerticalOptions="End"/>
+                            Aspect="AspectFill"
+                            HorizontalOptions="End"
+                            VerticalOptions="End"
+                            HeightRequest="80"/>
                      <Image Source="asfalto.png"
-                            WidthRequest="400"
-                            VerticalOptions="End"/>
+                            Aspect="AspectFill"
+                            HorizontalOptions="End"
+                            VerticalOptions="End"
+                            HeightRequest="80"/>
                      <Image Source="asfalto.png"
-                            WidthRequest="400"
-                            VerticalOptions="End"/>
+                             Aspect="AspectFill"
+                            HorizontalOptions="End"
+                            VerticalOptions="End"
+                            HeightRequest="80"/>
               </HorizontalStackLayout>
               
               <ff:CachedImageView CacheType="Memory"
                                    CacheDuration="365"
                                    x:Name="imgCarro"
-                                   HeightRequest="100"/>
+                                   HeightRequest="100"
+                                   VerticalOptions="End"/>
 
               <Image Source="obstaculo1.png"
                      x:Name="obstaculo1"
                      WidthRequest="100"
                      HeightRequest="100"
-                     BackgroundColor="BLUE"/>
+                     Aspect="Fill"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"/>
 
               <Image Source="obstaculo2.png"
                      x:Name="obstaculo2"
                      WidthRequest="100"
                      HeightRequest="100"
-                     BackgroundColor="BLUE"/>
+                     Aspect="Fill"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"/>
 
               <Image Source="obstaculo3.png"
                      x:Name="obstaculo3"
                      WidthRequest="100"
                      HeightRequest="100"
-                     BackgroundColor="BLUE"/>
+                     Aspect="Fill"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"/>
 
               <Image Source="obstaculo4.png"
                      x:Name="obstaculo4"
                      WidthRequest="100"
                      HeightRequest="100"
-                     BackgroundColor="BLUE"/>
+                     Aspect="AspectFill"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"/>
         </Grid>
 </ContentPage>

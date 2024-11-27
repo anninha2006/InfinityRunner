@@ -16,7 +16,7 @@ public class Inimigo
     }
     public void Reset()
     {
-        imageView.TranslationX=500;
+        imageView.TranslationX=100;
     }
     
 }
